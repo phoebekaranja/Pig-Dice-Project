@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pig Dice</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <img src="img/dice.jpeg" alt="img" width="35%" float="center"/>
+        <h1>Enjoy Yourself!!</h1>
+
+
+      <form id="pigForm" class="form-group" action="index.html" method="post">
+        <div class="player-group">
+          <label class="player-group">Enter Player1</label>
+          <input id="PHOEBE" type="text">
+        </div>
+        <div class="playersName">
+          <label class="player-group">Enter Player2</label>
+          <input id="KARANJA" type="text">
+        </div>
+        <button class="player-group btn-success" name="button">Submit</button>
+      </form>
+    </div>
+
+      <br>
+      <div class="Display">
+        <div class="col-md-5" id="gameDisplayPerson1">
+          <h1><span id="Person1"></span>Score: <span class="Display Person1Score">0</span></h1>
+          <div id="Person1Button">
+          <h2>Player <span class="PersonStatus" class="Display"></span>Turn</h2>
+          <h2>Score for this Turn: <span id="turnScore" class="Display turnScore"></span></h2>
+          <h2>Roll Result: <span id="rollResult" class="Display rollResult"></span></h2>
+
+          <button type="button" class="btn btn-warning btn-lg rollPig">Roll for More Points!</button>
+          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling and keep points...</button>
+          </div>
+        </div>
+
+<div id="Phoebe">
+        <div class="col-md-5 col-md-offset-2" id="DisplayPerson2">
+          <h1><span id="Person 2"></span> Score: <span class="Display Person2Score">0</span></h1>
+          <div id="Person2Button">
+          <h2>Person2<span class="PersonStatus"></span>Turn</h2>
+
+          <h2>Score for this Turn: <span id="turnScore" class="Display turnScore"></span></h2>
+          <h2>Roll Result: <span id="rollResult" class="Display rollResult"></span></h2>
+
+
+          <button type="button" class="btn btn-warning btn-lg rollPig">(Re)Roll for More Points!</button>
+          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling and keep points...</button>
+        </div>
+
+      </div>
+</div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
